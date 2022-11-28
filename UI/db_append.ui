@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DB_Append</class>
+ <widget class="QMainWindow" name="DB_Append">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>810</width>
+    <height>613</height>
+   </rect>
+  </property>
+  <property name="cursor">
+   <cursorShape>ArrowCursor</cursorShape>
+  </property>
+  <property name="windowTitle">
+   <string>Data Base Append</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../icon/icon4.png</normaloff>../icon/icon4.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(77, 89, 157);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLineEdit" name="lineEdit_1">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>300</y>
+      <width>601</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Candara Light</family>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit {
+	border: 2px solid rgb(85, 98, 173);
+	border-radius: 20px;
+	color: #FFF;
+	padding-left: 20px;
+	padding-right: 20px;
+	background-color: rgb(85, 98, 173);
+}
+QLineEdit:hover {
+	border: 2px solid rgb(96, 112, 197);
+}
+QLineEdit:focus {
+	border: 2px solid rgb(225, 144, 230);
+	background-color: rgb(93, 108, 191);
+
+}</string>
+    </property>
+    <property name="placeholderText">
+     <string>Введите название вещи</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_2">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>370</y>
+      <width>601</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Candara Light</family>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit {
+	border: 2px solid rgb(85, 98, 173);
+	border-radius: 20px;
+	color: #FFF;
+	padding-left: 20px;
+	padding-right: 20px;
+	background-color: rgb(85, 98, 173);
+}
+QLineEdit:hover {
+	border: 2px solid rgb(96, 112, 197);
+}
+QLineEdit:focus {
+	border: 2px solid rgb(225, 144, 230);
+	background-color: rgb(93, 108, 191);
+
+}</string>
+    </property>
+    <property name="placeholderText">
+     <string>Введите цвет вещи</string>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame_2">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>450</y>
+      <width>481</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(93, 107, 189);
+background-color: rgb(81, 94, 166);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <layout class="QGridLayout" name="gird" rowstretch="0" columnstretch="0">
+     <property name="sizeConstraint">
+      <enum>QLayout::SetDefaultConstraint</enum>
+     </property>
+     <property name="leftMargin">
+      <number>6</number>
+     </property>
+     <property name="topMargin">
+      <number>10</number>
+     </property>
+     <property name="rightMargin">
+      <number>5</number>
+     </property>
+     <property name="bottomMargin">
+      <number>8</number>
+     </property>
+     <property name="horizontalSpacing">
+      <number>14</number>
+     </property>
+     <property name="verticalSpacing">
+      <number>6</number>
+     </property>
+     <item row="0" column="0">
+      <widget class="QPushButton" name="btn_append">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>100</width>
+         <height>50</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>500</width>
+         <height>70</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Candara Light</family>
+         <pointsize>18</pointsize>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+	background-color: rgb(85, 98, 173);
+	color: rgb(227, 243, 245);
+	border-left: 1px solid rgb(89, 102, 180);
+	border-right: 1px solid rgb(89, 102, 180);
+	border-bottom: 5px solid rgb(89, 102, 180);
+}
+QPushButton:hover {
+	background-color: rgb(61, 188, 65);
+	border-left: 1px solid rgb(110, 225, 250);
+	border-right: 1px soild rgb(110, 225, 250);
+	border-bottom: 5px solid rgb(110, 225, 250);
+}</string>
+       </property>
+       <property name="text">
+        <string>Добавить</string>
+       </property>
+       <property name="shortcut">
+        <string>Return</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QComboBox" name="combobox_2">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>230</y>
+      <width>601</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Candara Light</family>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="whatsThis">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QComboBox {
+	border: 2px solid rgb(85, 98, 173);
+	border-radius: 20px;
+	color: #FFF;
+	padding-left: 20px;
+	padding-right: 20px;
+	background-color: rgb(85, 98, 173);
+}
+         QComboBox QAbstractItemView {
+    border: 2px solid rgb(208, 125, 255);
+	border-radius: 5px;
+    selection-background-color: rgb(84, 191, 212);
+	text-color: rgb(255, 255, 255);
+	background-color: rgb(94, 109, 193);
+	color: rgb(255, 255, 255);
+	padding-left: 3px
+}
+QComboBox:hover {
+	border: 2px solid rgb(96, 112, 197);
+}
+QComboBox:focus {
+	border: 2px solid rgb(225, 144, 230);
+	background-color: rgb(93, 108, 191);
+}
+QComboBox:editable {
+    background: rgb(99, 114, 202);
+}
+QComboBox:!editable:on, QComboBox::drop-down:editable:on {
+    background: rgb(114, 131, 232);
+}
+
+</string>
+    </property>
+    <property name="editable">
+     <bool>false</bool>
+    </property>
+    <property name="currentText">
+     <string>Шапка</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>Шапка</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Кепка</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Панама</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QComboBox" name="combobox_1">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>120</y>
+      <width>601</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Candara Light</family>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="whatsThis">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QComboBox {
+	border: 2px solid rgb(85, 98, 173);
+	border-radius: 20px;
+	color: #FFF;
+	padding-left: 20px;
+	padding-right: 20px;
+	background-color: rgb(85, 98, 173);
+}
+QComboBox:hover {
+	border: 2px solid rgb(96, 112, 197);
+}
+QComboBox:focus {
+	border: 2px solid rgb(225, 144, 230);
+	background-color: rgb(93, 108, 191);
+}
+QComboBox:editable {
+    background: rgb(99, 114, 202);
+}
+QComboBox:!editable:on, QComboBox::drop-down:editable:on {
+    background: rgb(114, 131, 232);
+}
+QComboBox QAbstractItemView {
+    border: 2px solid rgb(208, 125, 255);
+	border-radius: 5px;
+    selection-background-color: rgb(84, 191, 212);
+	text-color: rgb(255, 255, 255);
+	background-color: rgb(94, 109, 193);
+	color: rgb(255, 255, 255);
+	padding-left: 3px;
+	
+}
+</string>
+    </property>
+    <property name="editable">
+     <bool>false</bool>
+    </property>
+    <property name="currentText">
+     <string>Голова</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>Голова</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Тело</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Ноги</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_10">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>190</y>
+      <width>541</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Candara Light</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit {
+	border: 2px solid rgb(85, 98, 173);
+	border-radius: 10px;
+	color: #FFF;
+	padding-left: 20px;
+	padding-right: 20px;
+	background-color: rgb(85, 98, 173);
+}
+QLineEdit:hover {
+	border: 2px solid rgb(96, 112, 197);
+}</string>
+    </property>
+    <property name="text">
+     <string>Выберите подтип:</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_3">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>80</y>
+      <width>541</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Candara Light</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit {
+	border: 2px solid rgb(85, 98, 173);
+	border-radius: 10px;
+	color: #FFF;
+	padding-left: 20px;
+	padding-right: 20px;
+	background-color: rgb(85, 98, 173);
+}
+QLineEdit:hover {
+	border: 2px solid rgb(96, 112, 197);
+}</string>
+    </property>
+    <property name="text">
+     <string>Выберите тип:</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_war">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>30</y>
+      <width>471</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Candara Light</family>
+      <pointsize>22</pointsize>
+      <underline>true</underline>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>ArrowCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit {
+	border: 2px solid rgb(77, 89, 157);
+	border-radius: 20px;
+	color: #FFF;
+	padding-left: 20px;
+	padding-right: 20px;
+	background-color: rgb(77, 89, 157);
+	color: rgb(198, 48, 63);
+}
+</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="placeholderText">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
